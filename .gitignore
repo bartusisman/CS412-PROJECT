@@ -1,0 +1,47 @@
+# Large files
+*.zip
+*.tar.gz
+*.tar
+*.rar
+*.7z
+*.iso
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.mkv
+
+# Large image files
+*.psd
+*.ai
+*.tiff
+
+# Large data files
+*.csv
+*.sql
+*.sqlite
+*.db
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Add these if you have specific directories to ignore
+large-files/
+data/raw/ 
+round1/data/training-dataset.jsonl.gz
+round1/data/test-classification-round1.dat
+round1/data/test-regression-round1.jsonl
+round1/processed/category_mapping.json
+round1/models/classifier.joblib
