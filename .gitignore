@@ -24,9 +24,15 @@
 *.sql
 *.sqlite
 *.db
+*.jsonl
+*.jsonl.gz
+*.dat
 
 # Log files
 *.log
+logs/
+tmp/
+temp/
 
 # OS generated files
 .DS_Store
@@ -37,11 +43,74 @@
 ehthumbs.db
 Thumbs.db
 
-# Add these if you have specific directories to ignore
-large-files/
-data/raw/ 
-round1/data/training-dataset.jsonl.gz
-round1/data/test-classification-round1.dat
-round1/data/test-regression-round1.jsonl
-round1/processed/category_mapping.json
-round1/models/classifier.joblib
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Python related
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Project specific files
+# Common data
+common_data/training-dataset.jsonl.gz
+
+# Round 1
+round1/data/
+round1/processed/
+round1/models/
+round1/*.json
+
+# Round 2
+round2/data/
+round2/processed/
+round2/models/
+round2/*.json
+
+# Round 3
+round3/data/
+round3/processed/
+round3/models/
+round3/*.json
+
+# Allow specific CSV files
+!common_data/train-classification.csv
+!common_data/Annotated Users CS412.csv
+common_data/Annotated Users CS412.csv
+common_data/train-classification.csv

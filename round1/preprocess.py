@@ -60,7 +60,8 @@ def extract_username_features(username):
 def load_training_data():
     """Load training data"""
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(current_dir, 'data')
+    project_root = os.path.dirname(current_dir)  # Go up one level to project root
+    data_dir = os.path.join(project_root, 'common_data')
     
     try:
         # Load training labels
